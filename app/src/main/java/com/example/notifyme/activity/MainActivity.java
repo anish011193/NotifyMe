@@ -449,7 +449,7 @@ public class MainActivity extends AppCompatActivity implements
             Intent serviceIntent = new Intent(this, LocationService.class);
 //        this.startService(serviceIntent);
             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O){
-               // MainActivity.this.startForegroundService(serviceIntent);
+                MainActivity.this.startForegroundService(serviceIntent);
             }else{
                 startService(serviceIntent);
             }
